@@ -1,0 +1,20 @@
+.filter-section {
+    margin: 10px 0; /* Réduit l'espace autour de la section */
+    padding: 5px 0; /* Réduit l'espace intérieur de la section */
+}
+
+.btn-group .btn {
+    font-size: 14px;  /* Réduit la taille de la police des boutons */
+    padding: 6px 12px; /* Réduit le padding pour des boutons plus petits */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-group .btn:hover {
+    background-color: #d1e7dd;
+}
+
+.btn-group .btn.active {
+    background-color: #21759B;
+    color: white;
+    border-color: #21759B;
+}

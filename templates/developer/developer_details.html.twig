@@ -1,0 +1,91 @@
+{% extends "base.html.twig" %}
+
+{% block title %}
+    Profil Développeur
+{% endblock %}
+
+{% block body %}
+
+<main class="main">
+
+   <!-- Page Title -->
+<div class="page-title accent-background" style="padding: 20px 0;">
+  <div class="container">
+    <h1 style="font-size: 2rem;">Profil Développeur</h1>
+    <nav class="breadcrumbs"></nav>
+  </div>
+</div><!-- End Page Title -->
+
+
+    <!-- Service Details Section -->
+    <section id="service-details" class="service-details section">
+
+      <div class="container">
+        <div class="row gy-4">
+
+          <!-- Image de Profil et Compétences -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="profile-image">
+              <img src="https://media.licdn.com/dms/image/v2/D5603AQFArng1YhoA9Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1696285018527?e=1742428800&v=beta&t=BL9nHMuBma9Ryn__q0WtYYvo0RC_SulJ-cwLHMgQCS0" alt="Photo de Profil" class="img-fluid rounded-circle" style="width: 200px; height: 200px; object-fit: cover;">
+            </div>
+            <h4>Profil Développeur</h4>
+            <p>Développeur spécialisé dans la création de solutions logicielles robustes, avec plus de 5 ans d'expérience en développement web, mobile et gestion de projet...</p>
+          </div>
+
+          <!-- Description de l'expérience -->
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+            <h3>Expérience Professionnelle</h3>
+            <div class="experience">
+              <div class="experience-item">
+                <h5>Société ABC Tech</h5>
+                <p><strong>Rôle:</strong> Développeur Backend</p>
+                <p><strong>Dates:</strong> Janvier 2020 - Décembre 2023</p>
+                <p><strong>Description:</strong> Travaillé sur la conception et le développement de solutions backend pour des applications web et mobile...</p>
+                <p><strong>Technologies utilisées:</strong> Node.js, PHP, MySQL, Redis, Docker</p>
+              </div>
+
+              <div class="experience-item">
+                <h5>Société XYZ Solutions</h5>
+                <p><strong>Rôle:</strong> Développeur Fullstack</p>
+                <p><strong>Dates:</strong> Mars 2017 - Décembre 2019</p>
+                <p><strong>Description:</strong> Participation à la création d'applications mobiles et de sites web...</p>
+                <p><strong>Technologies utilisées:</strong> React, Angular, Laravel, PostgreSQL, GraphQL</p>
+              </div>
+            </div>
+
+            <h3>Technologies et Frameworks maîtrisés</h3>
+            <ul>
+              <li><strong>Langages:</strong> PHP, JavaScript (ES6+), Python, Java</li>
+              <li><strong>Frameworks:</strong> Symfony, Laravel, React, Angular, Node.js, Django</li>
+              <li><strong>Technologies:</strong> Docker, Kubernetes, MySQL, PostgreSQL, MongoDB, Redis, GraphQL, REST API</li>
+              <li><strong>Outils:</strong> Git, Jenkins, Nginx, Docker Compose, AWS, Heroku</li>
+            </ul>
+
+            <h3>Explication de l'Expérience</h3>
+            <p>Sur chaque projet, mon objectif était de concevoir des solutions efficaces tout en respectant les délais...</p>
+
+            <!-- Téléchargement CV -->
+            <h3>Télécharger mon CV</h3>
+            <p>Vous pouvez télécharger mon CV au format PDF en cliquant sur le bouton ci-dessous.</p>
+            <a href="{{ asset('path_to_your_cv.pdf') }}" class="btn btn-primary" download="CV_Developpeur.pdf">Télécharger le CV</a>
+
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Service Details Section -->
+
+</main>
+
+<footer id="footer" class="footer light-background">
+  <!-- Footer content here... -->
+</footer>
+
+<!-- Scroll Top -->
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Preloader -->
+<div id="preloader"></div>
+
+{% endblock %}

@@ -1,0 +1,163 @@
+{% extends "base.html.twig" %}
+
+{% block title %}
+    Contact
+{% endblock %}
+
+{% block body %}
+
+<main class="main">
+    <!-- Filter Section -->
+ <section class="filter-section mb-4">
+        <div class="container text-center">
+            <div class="btn-group" role="group">
+                <button id="framework-btn" class="btn btn-outline-primary active" onclick="showSection('framework')">Frameworks</button>
+                <button id="cms-btn" class="btn btn-outline-secondary" onclick="showSection('cms')">CMS</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Framework Section -->
+    <section id="framework-section" class="services section light-background">
+        <div class="container">
+            <div class="row gy-4">
+            
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-item item-red position-relative">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="80" height="80">
+                                <ellipse cx="300" cy="300" rx="200" ry="120" fill="#FF2D20" />
+                                <text x="50%" y="50%" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="90" dy=".3em">L</text>
+                            </svg>
+                        </div>
+                        <a href="{{path('app_developer')}}" class="stretched-link">
+                            <h3>Laravel</h3>
+                        </a>
+                        <p>Framework PHP populaire pour le développement web moderne avec une structure élégante et robuste.</p>
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+    <div class="service-item item-black position-relative">
+        <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="80" height="80">
+                <ellipse cx="300" cy="300" rx="200" ry="120" fill="#000000" />
+                <text x="50%" y="50%" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="90" dy=".3em">S</text>
+            </svg>
+        </div>
+        <a href="{{path('app_developer')}}" class="stretched-link">
+            <h3>Symfony</h3>
+        </a>
+        <p>Framework PHP performant conçu pour le développement de projets web flexibles et robustes.</p>
+    </div>
+</div><!-- End Service Item -->
+
+<!-- CodeIgniter Section -->
+<div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+    <div class="service-item item-orange position-relative">
+        <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="80" height="80">
+                <ellipse cx="300" cy="300" rx="200" ry="120" fill="#EE4623" />
+                <text x="50%" y="50%" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="80" dy=".3em">CI</text>
+            </svg>
+        </div>
+        <a href="service-details.html" class="stretched-link">
+            <h3>CodeIgniter</h3>
+        </a>
+        <p>Framework PHP léger et rapide conçu pour créer des applications web performantes et évolutives.</p>
+    </div>
+</div><!-- End Service Item -->
+
+<!-- Zend Framework Section -->
+<div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+    <div class="service-item item-green position-relative">
+        <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="80" height="80">
+                <ellipse cx="300" cy="300" rx="200" ry="120" fill="#61A54E" />
+                <text x="50%" y="50%" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="80" dy=".3em">Z</text>
+            </svg>
+        </div>
+        <a href="service-details.html" class="stretched-link">
+            <h3>Zend Framework</h3>
+        </a>
+        <p>Framework PHP modulaire et puissant pour développer des applications web robustes et évolutives.</p>
+    </div>
+</div><!-- End Service Item -->
+
+            
+                <!-- Add more Framework Items here... -->
+
+            </div>
+        </div>  
+    </section>
+
+    <!-- CMS Section -->
+    <section id="cms-section" class="cms section light-background" style="display:none;">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-item item-blue position-relative">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="80" height="80">
+                                <ellipse cx="300" cy="300" rx="200" ry="120" fill="#21759B" />
+                                <text x="50%" y="50%" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="90" dy=".3em">WP</text>
+                            </svg>
+                        </div>
+                        <a href="" class="stretched-link">
+                            <h3>WordPress</h3>
+                        </a>
+                        <p>Système de gestion de contenu flexible et puissant, idéal pour créer des sites web et des blogs.</p>
+                    </div>
+                </div><!-- End WordPress Item -->
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-item item-orange position-relative">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="80" height="80">
+                                <ellipse cx="300" cy="300" rx="200" ry="120" fill="#FF7A00" />
+                                <text x="50%" y="50%" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="80" dy=".3em">M</text>
+                            </svg>
+                        </div>
+                        <a href="" class="stretched-link">
+                            <h3>Magento</h3>
+                        </a>
+                        <p>Plateforme de commerce électronique robuste, parfaite pour les grandes entreprises et les boutiques en ligne complexes.</p>
+                    </div>
+                </div><!-- End Magento Item -->
+
+                <!-- Add more CMS Items here... -->
+
+            </div>
+        </div>  
+    </section>
+
+</main>
+
+<!-- Scroll Top -->
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Preloader -->
+<div id="preloader"></div>
+
+
+
+
+    <script>
+        function showSection(section) {
+            // Hide both sections
+            document.getElementById('framework-section').style.display = 'none';
+            document.getElementById('cms-section').style.display = 'none';
+
+            // Show the selected section
+            if (section === 'framework') {
+                document.getElementById('framework-section').style.display = 'block';
+                document.getElementById('framework-btn').classList.add('active');
+                document.getElementById('cms-btn').classList.remove('active');
+            } else if (section === 'cms') {
+                document.getElementById('cms-section').style.display = 'block';
+                document.getElementById('cms-btn').classList.add('active');
+                document.getElementById('framework-btn').classList.remove('active');
+            }
+        }
+    </script>
+{% endblock %}
